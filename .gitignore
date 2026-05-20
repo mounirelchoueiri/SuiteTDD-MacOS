@@ -1,0 +1,12 @@
+# Source code — not published
+NetsuiteTDD/
+NetsuiteTDD.xcodeproj/
+supabase/
+build/
+build-release/
+DerivedData/
+.DS_Store
+*.swp
+*~
+.env
+.env.local
