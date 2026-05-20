@@ -43,11 +43,8 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ### 🔐 Licensing & Free Trial
 - **7-day free trial** with full access — no credit card required
-- Trial countdown shows days, hours, and minutes remaining
 - Purchase a lifetime license via Stripe — key delivered by email instantly
 - Activate on up to 2 machines per license
-- Offline grace period — works without internet for 7 days after activation
-- License management in Settings with activate/deactivate controls
 
 ### ⌨️ Keyboard Shortcuts
 - **⌘N** — New TDD
