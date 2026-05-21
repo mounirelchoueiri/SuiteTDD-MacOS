@@ -76,7 +76,7 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ## Installation
 
-1. Download `SuiteTDD-v3.0.dmg` from the [latest release](../../releases/latest)
+1. Download `SuiteTDD-v3.0.1.dmg` from the [latest release](../../releases/latest)
 2. Open the DMG and drag **SuiteTDD.app** into your Applications folder
 3. Launch SuiteTDD — it's signed and notarized by Apple, so it opens without any security warnings
 4. Follow the in-app tutorial to set up your profile, download an AI model, and start your free trial
@@ -113,4 +113,4 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 Copyright © 2026 Mounir El Choueiri. All rights reserved.
 
-SuiteTDD requires a license for continued use after the 7-day free trial. Purchase a license at the in-app "Buy Now" link or from [our website](https://buy.stripe.com/8x200j8IU0d994E2oubwk00).
+SuiteTDD requires a license for continued use after the 7-day free trial. Purchase a license at the in-app "Buy Now" link or from [our website](https://buy.stripe.com/4gMdR98IUaRNgx6fbgbwk01).
