@@ -15,12 +15,16 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ### 📄 Structured Document Authoring
 - Capture everything a TDD needs: client, SOW #, project name, TDD title, solution type, script types, included records, included fields, integration points, testing criteria, risks & assumptions
+- **NetSuite record autocomplete** — 85+ standard records (Sales Order, Invoice, Customer, Vendor, etc.) with categorized suggestions as you type
+- **Expanded field types** — all standard NetSuite field types (Date/Time, Percent, Multiple Select, Phone Number, and more)
 - Live status workflow per document: **Draft → Client Review → Client Approved → Cancelled**
 
 ### 🗂️ Multi-Document Workspace
 - Sidebar lists every TDD you've created with color-coded status badges
+- **Search** across all document fields from the toolbar — instant filtering as you type
 - Filter by **Client** or **Status** with per-status document counts
 - Toggle **Group by Client** for a folder-style view
+- **Duplicate** documents from the right-click context menu
 
 ### ✨ Smart Prompt Engineering
 - Customize **TDD Sections** — choose which sections appear, reorder them, write per-section AI instructions and sample text
@@ -32,12 +36,14 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 - **PDF style import** — drop a branded PDF and SuiteTDD extracts fonts, sizes, colors, margins, heading styles, and logos automatically
 
 ### 📝 Live Markdown Preview & Editor
+- **Side-by-side mode** — edit markdown on the left, see the rendered preview live on the right
 - Inline markdown editor — tweak generated content before exporting
 - Web view preview with dark-mode-aware syntax highlighting
 - Properly formatted tables, code blocks, and headings
 
-### 📤 Word Export
+### 📤 Export & Sharing
 - One-click export to `.docx` with native macOS save dialog
+- **Import/export `.suitetdd` files** — share documents between Macs or team members
 - **Export filename template** with `{title}`, `{client}`, `{project}`, `{sow}`, `{date}` placeholders
 - **Auto status bump** — exporting a Draft automatically transitions it to Client Review (configurable)
 
@@ -51,6 +57,7 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 - **⌘⇧G** — Generate
 - **⌘P** — Toggle Preview
 - **⌘E** — Export to Word
+- **⌘⇧I** — Import Document
 
 ### 🚀 Onboarding & Auto-Update
 - First-launch tutorial walks new users through profile setup, model download, feature overview, and trial activation
@@ -69,8 +76,8 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ## Installation
 
-1. Download `SuiteTDD-v2.0.zip` from the [latest release](../../releases/latest)
-2. Unzip and drag **SuiteTDD.app** into your Applications folder
+1. Download `SuiteTDD-v3.0.dmg` from the [latest release](../../releases/latest)
+2. Open the DMG and drag **SuiteTDD.app** into your Applications folder
 3. Launch SuiteTDD — it's signed and notarized by Apple, so it opens without any security warnings
 4. Follow the in-app tutorial to set up your profile, download an AI model, and start your free trial
 
