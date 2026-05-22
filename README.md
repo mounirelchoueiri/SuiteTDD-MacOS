@@ -13,8 +13,17 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 ### 🧠 Local AI Generation
 - Runs 100% offline using Apple's MLX framework on Apple Silicon
 
+### 💬 AI Chat Refinement *(New in v3.1)*
+- **Conversational refinement** — after generating a TDD, open the "Refine with AI" panel to iteratively improve specific sections through multi-turn chat
+- **Section-level Apply** — AI suggestions are intelligently merged into the correct section of your document, not a full replacement
+- **One-click Undo** — instantly revert any applied change
+- **Formatted responses** — AI replies render headings, bold, tables, and lists as readable text
+- **Persistent chat history** — conversations are saved with each document and survive app restarts
+
 ### 📄 Structured Document Authoring
 - Capture everything a TDD needs: client, SOW #, project name, TDD title, solution type, script types, included records, included fields, integration points, testing criteria, risks & assumptions
+- **Header vs. Sublist field placement** — indicate whether each field lives at the header level or on a specific sublist (e.g., Items, Expenses, Shipping)
+- **Smart sublist suggestions** — 23 common NetSuite record types ship with pre-mapped sublists for autocomplete
 - **NetSuite record autocomplete** — 85+ standard records (Sales Order, Invoice, Customer, Vendor, etc.) with categorized suggestions as you type
 - **Expanded field types** — all standard NetSuite field types (Date/Time, Percent, Multiple Select, Phone Number, and more)
 - Live status workflow per document: **Draft → Client Review → Client Approved → Cancelled**
@@ -76,7 +85,7 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ## Installation
 
-1. Download `SuiteTDD-v3.0.2.dmg` from the [latest release](../../releases/latest)
+1. Download `SuiteTDD-3.1.dmg` from the [latest release](../../releases/latest)
 2. Open the DMG and drag **SuiteTDD.app** into your Applications folder
 3. Launch SuiteTDD — it's signed and notarized by Apple, so it opens without any security warnings
 4. Follow the in-app tutorial to set up your profile, download an AI model, and start your free trial
