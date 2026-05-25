@@ -13,10 +13,17 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 ### 🧠 Local AI Generation
 - Runs 100% offline using Apple's MLX framework on Apple Silicon
 
-### 💬 AI Chat Refinement *(New in v3.1)*
+### 📥 PDF / Word Import *(New in v3.3)*
+- **Import existing TDDs** from PDF or Word (.docx) files via **File → Import from PDF / Word** (⌘⌥I) or the sidebar Import menu
+- **AI-powered two-pass processing** — extracts structured form fields (title, client, SOW#, script types, records, fields, document date) into the input form, then converts the full document into section-aware markdown using your configured TDD sections
+- **Date extraction** — imported documents with dates automatically populate the Initial Draft Date field
+- **Animated import overlay** with phase-based progress bar, elapsed timer, and cancel support
+
+### 💬 AI Chat Refinement *(New in v3.1, improved in v3.3)*
 - **Conversational refinement** — after generating a TDD, open the "Refine with AI" panel to iteratively improve specific sections through multi-turn chat
-- **Section-level Apply** — AI suggestions are intelligently merged into the correct section of your document, not a full replacement
-- **One-click Undo** — instantly revert any applied change
+- **Section-level Apply with validation** — AI suggestions are intelligently merged into the correct section; if the target heading isn't found, you get a clear error instead of a silent full-document replacement
+- **Full-replacement confirmation** — destructive-action alert when applying changes that would replace the entire document
+- **One-click Undo** — instantly revert any applied change with the undo button on the message bubble
 - **Formatted responses** — AI replies render headings, bold, tables, and lists as readable text
 - **Persistent chat history** — conversations are saved with each document and survive app restarts
 
@@ -66,11 +73,13 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 - **⌘⇧G** — Generate
 - **⌘P** — Toggle Preview
 - **⌘E** — Export to Word
-- **⌘⇧I** — Import Document
+- **⌘⇧I** — Import .suitetdd Document
+- **⌘⌥I** — Import from PDF / Word
 
 ### 🚀 Onboarding & Auto-Update
 - First-launch tutorial walks new users through profile setup, model download, feature overview, and trial activation
 - Built-in **auto-update** from GitHub Releases — checks daily, downloads DMG, mounts, replaces, and relaunches
+- **Important:** drag SuiteTDD.app into your Applications folder before launching — running from the DMG will prevent auto-update from saving
 - Tutorial re-playable anytime from **Settings → General**
 
 ---
@@ -85,7 +94,7 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ## Installation
 
-1. Download `SuiteTDD-3.1.dmg` from the [latest release](../../releases/latest)
+1. Download `SuiteTDD-3.3.dmg` from the [latest release](../../releases/latest)
 2. Open the DMG and drag **SuiteTDD.app** into your Applications folder
 3. Launch SuiteTDD — it's signed and notarized by Apple, so it opens without any security warnings
 4. Follow the in-app tutorial to set up your profile, download an AI model, and start your free trial
