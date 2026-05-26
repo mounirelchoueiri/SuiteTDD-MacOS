@@ -4,131 +4,131 @@
 
 SuiteTDD is a native macOS app that helps NetSuite consultants and developers produce professional Technical Design Documents (TDDs) in seconds. It runs entirely offline using Apple Silicon's MLX framework — your client data never leaves your Mac.
 
-> Made with ❤️ by Mounir, in Toronto 🇨🇦
+> Made by Mounir, in Toronto
+
+---
+
+## What's New in v4.0
+
+- **Supabase-backed free trials** — enter your email to start a 7-day trial; one trial per email and per machine, enforced server-side
+- **Hard paywall at expiry** — the app fully locks when the trial ends, prompting you to purchase a license
+- **`.suitetddlicense` file activation** — double-click a license file to activate instantly, no copy-pasting keys
+- **Post-purchase license page** — after Stripe checkout you're redirected to your license key with a one-click download of the license file
+- **PDF/Word document import** — import an existing TDD from PDF or Word and SuiteTDD rebuilds it as an editable, structured document using AI
+- **AI chat refinement panel** — have a conversation with the AI to iteratively refine generated sections
+- **Chat apply validation** — AI-suggested edits are validated before being applied to prevent corruption
+- **4-hour online re-check** — trial and license status are re-verified periodically while the app is running
 
 ---
 
 ## Features
 
-### 🧠 Local AI Generation
+### Local AI Generation
 - Runs 100% offline using Apple's MLX framework on Apple Silicon
+- Multiple model support — download and switch between models from Settings
 
-### 📥 PDF / Word Import *(New in v3.3)*
-- **Import existing TDDs** from PDF or Word (.docx) files via **File → Import from PDF / Word** (⌘⌥I) or the sidebar Import menu
-- **AI-powered two-pass processing** — extracts structured form fields (title, client, SOW#, script types, records, fields, document date) into the input form, then converts the full document into section-aware markdown using your configured TDD sections
-- **Date extraction** — imported documents with dates automatically populate the Initial Draft Date field
-- **Animated import overlay** with phase-based progress bar, elapsed timer, and cancel support
+### Structured Document Authoring
+- Capture everything a TDD needs: client, SOW #, project name, title, solution type, script types, included records, included fields, integration points, testing criteria, risks & assumptions
+- NetSuite record autocomplete — 85+ standard records with categorized suggestions
+- Expanded field types — all standard NetSuite field types
+- Live status workflow: **Draft > Client Review > Client Approved > Cancelled**
 
-### 💬 AI Chat Refinement *(New in v3.1, improved in v3.3)*
-- **Conversational refinement** — after generating a TDD, open the "Refine with AI" panel to iteratively improve specific sections through multi-turn chat
-- **Section-level Apply with validation** — AI suggestions are intelligently merged into the correct section; if the target heading isn't found, you get a clear error instead of a silent full-document replacement
-- **Full-replacement confirmation** — destructive-action alert when applying changes that would replace the entire document
-- **One-click Undo** — instantly revert any applied change with the undo button on the message bubble
-- **Formatted responses** — AI replies render headings, bold, tables, and lists as readable text
-- **Persistent chat history** — conversations are saved with each document and survive app restarts
+### Multi-Document Workspace
+- Command Center dashboard with document metrics, recent work, and client browser
+- Sidebar with color-coded status badges
+- Search across all document fields from the toolbar
+- Filter by Client, Status, or Script Type with per-status counts
+- Group by Client for a folder-style view
+- Duplicate and export documents from the right-click context menu
 
-### 📄 Structured Document Authoring
-- Capture everything a TDD needs: client, SOW #, project name, TDD title, solution type, script types, included records, included fields, integration points, testing criteria, risks & assumptions
-- **Header vs. Sublist field placement** — indicate whether each field lives at the header level or on a specific sublist (e.g., Items, Expenses, Shipping)
-- **Smart sublist suggestions** — 23 common NetSuite record types ship with pre-mapped sublists for autocomplete
-- **NetSuite record autocomplete** — 85+ standard records (Sales Order, Invoice, Customer, Vendor, etc.) with categorized suggestions as you type
-- **Expanded field types** — all standard NetSuite field types (Date/Time, Percent, Multiple Select, Phone Number, and more)
-- Live status workflow per document: **Draft → Client Review → Client Approved → Cancelled**
-
-### 🗂️ Multi-Document Workspace
-- Sidebar lists every TDD you've created with color-coded status badges
-- **Search** across all document fields from the toolbar — instant filtering as you type
-- Filter by **Client** or **Status** with per-status document counts
-- Toggle **Group by Client** for a folder-style view
-- **Duplicate** documents from the right-click context menu
-
-### ✨ Smart Prompt Engineering
-- Customize **TDD Sections** — choose which sections appear, reorder them, write per-section AI instructions and sample text
+### Smart Prompt Engineering
+- Customize TDD Sections — choose which sections appear, reorder them, write per-section AI instructions and sample text
 - Per-section placeholders: `{company}`, `{author}`, `{authorRole}`, `{client}`, `{project}`, `{title}`, `{sow}`, `{date}`
-- Global tone/style and "additional instructions" applied to every generation
+- Global tone/style and additional instructions applied to every generation
 
-### 🎨 Style System
-- **Multi-profile styles** — create, duplicate, rename, delete, and set a default style profile
-- **PDF style import** — drop a branded PDF and SuiteTDD extracts fonts, sizes, colors, margins, heading styles, and logos automatically
+### Style System
+- Multi-profile styles — create, duplicate, rename, delete, and set a default
+- PDF style import — drop a branded PDF and SuiteTDD extracts fonts, sizes, colors, margins, heading styles, and logos automatically
 
-### 📝 Live Markdown Preview & Editor
-- **Side-by-side mode** — edit markdown on the left, see the rendered preview live on the right
-- Inline markdown editor — tweak generated content before exporting
-- Web view preview with dark-mode-aware syntax highlighting
+### Live Markdown Preview & Editor
+- Side-by-side mode — edit markdown on the left, see the rendered preview on the right
+- Inline markdown editor with dark-mode-aware syntax highlighting
 - Properly formatted tables, code blocks, and headings
 
-### 📤 Export & Sharing
-- One-click export to `.docx` with native macOS save dialog
-- **Import/export `.suitetdd` files** — share documents between Macs or team members
-- **Export filename template** with `{title}`, `{client}`, `{project}`, `{sow}`, `{date}` placeholders
-- **Auto status bump** — exporting a Draft automatically transitions it to Client Review (configurable)
+### Import & Export
+- One-click export to `.docx`
+- Import from PDF or Word — AI extracts and restructures content into editable TDD fields
+- Import/export `.suitetdd` files to share between Macs or team members
+- Export filename template with `{title}`, `{client}`, `{project}`, `{sow}`, `{date}` placeholders
+- Auto status bump — exporting a Draft transitions it to Client Review (configurable)
 
-### 🔐 Licensing & Free Trial
-- **7-day free trial** with full access — no credit card required
+### Licensing & Free Trial
+- 7-day free trial — enter your email to start, no credit card required
+- Trial enforced server-side: one per email and one per machine
 - Purchase a lifetime license via Stripe — key delivered by email instantly
+- Activate by entering a key, or double-click a `.suitetddlicense` file
 - Activate on up to 2 machines per license
+- Retrieve your license anytime at [suitetdd.com/license-lookup](https://suitetdd.com/license-lookup)
 
-### ⌨️ Keyboard Shortcuts
-- **⌘N** — New TDD
-- **⌘⇧G** — Generate
-- **⌘P** — Toggle Preview
-- **⌘E** — Export to Word
-- **⌘⇧I** — Import .suitetdd Document
-- **⌘⌥I** — Import from PDF / Word
+### Keyboard Shortcuts
+- **Cmd+N** — New TDD
+- **Cmd+Shift+G** — Generate
+- **Cmd+P** — Toggle Preview
+- **Cmd+E** — Export to Word
+- **Cmd+Shift+I** — Import Document
+- **Cmd+Option+I** — Import from PDF/Word
 
-### 🚀 Onboarding & Auto-Update
-- First-launch tutorial walks new users through profile setup, model download, feature overview, and trial activation
-- Built-in **auto-update** from GitHub Releases — checks daily, downloads DMG, mounts, replaces, and relaunches
-- **Important:** drag SuiteTDD.app into your Applications folder before launching — running from the DMG will prevent auto-update from saving
-- Tutorial re-playable anytime from **Settings → General**
+### Onboarding & Auto-Update
+- First-launch tutorial walks through profile setup, model download, and feature overview
+- Built-in auto-update from GitHub Releases — checks daily
+- Tutorial re-playable anytime from Settings
 
 ---
 
 ## Requirements
 
 - macOS 14.0 (Sonoma) or later
-- Apple Silicon Mac (M1, M2, M3, or newer) — MLX requires Apple Silicon
+- Apple Silicon Mac (M1, M2, M3, M4, or newer)
 - ~5 GB of free disk space per AI model
 
 ---
 
 ## Installation
 
-1. Download `SuiteTDD-3.3.dmg` from the [latest release](../../releases/latest)
+1. Download the latest DMG from the [Releases page](../../releases/latest)
 2. Open the DMG and drag **SuiteTDD.app** into your Applications folder
-3. Launch SuiteTDD — it's signed and notarized by Apple, so it opens without any security warnings
-4. Follow the in-app tutorial to set up your profile, download an AI model, and start your free trial
+3. Launch SuiteTDD — signed and notarized by Apple
+4. Follow the in-app tutorial to set up your profile and download an AI model
 
 ---
 
 ## Screenshots
 
-<!-- Drop screenshots into docs/screenshots/ and they'll render below -->
-
-| Document Editor | Generated Output |
+| Command Center | Document Editor |
 | --- | --- |
-| ![Document Editor](docs/screenshots/editor.png) | ![Preview](docs/screenshots/preview.png) |
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Editor](docs/screenshots/editor.png) |
 
-| Sidebar with Filters | Settings & TDD Sections |
+| Generated Preview | AI Chat Refinement |
 | --- | --- |
-| ![Sidebar](docs/screenshots/sidebar.png) | ![Settings](docs/screenshots/settings.png) |
+| ![Preview](docs/screenshots/preview.png) | ![Chat](docs/screenshots/chat.png) |
 
-| AI Models Manager | First-Launch Tutorial |
+| PDF/Word Import | License Activation |
 | --- | --- |
-| ![Models](docs/screenshots/models.png) | ![Tutorial](docs/screenshots/tutorial.png) |
+| ![Import](docs/screenshots/import.png) | ![License](docs/screenshots/license.png) |
 
 ---
 
-## Roadmap
+## Links
 
-- [ ] Template library for common NetSuite customization patterns
-- [ ] Email license keys automatically via Resend after Stripe purchase
-- [ ] Anything else you can think of and want to request!
+- [Purchase a License](https://buy.stripe.com/4gMdR98IUaRNgx6fbgbwk01)
+- [Retrieve Your License Key](https://suitetdd.com/license-lookup)
+- [Report an Issue](https://github.com/mounirelchoueiri/SuiteTDD-MacOS/issues/new)
+- [Release Notes](../../releases)
 
 ---
 
 ## License
 
-Copyright © 2026 Mounir El Choueiri. All rights reserved.
+Copyright 2026 Mounir El Choueiri. All rights reserved.
 
-SuiteTDD requires a license for continued use after the 7-day free trial. Purchase a license at the in-app "Buy Now" link or from [our website](https://buy.stripe.com/4gMdR98IUaRNgx6fbgbwk01).
+SuiteTDD requires a license for continued use after the 7-day free trial.
