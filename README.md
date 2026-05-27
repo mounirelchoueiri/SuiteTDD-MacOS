@@ -8,16 +8,25 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ---
 
-## What's New in v4.0
+## What's New in v4.2
 
-- **Supabase-backed free trials** — enter your email to start a 7-day trial; one trial per email and per machine, enforced server-side
-- **Hard paywall at expiry** — the app fully locks when the trial ends, prompting you to purchase a license
-- **`.suitetddlicense` file activation** — double-click a license file to activate instantly, no copy-pasting keys
-- **Post-purchase license page** — after Stripe checkout you're redirected to your license key with a one-click download of the license file
-- **PDF/Word document import** — import an existing TDD from PDF or Word and SuiteTDD rebuilds it as an editable, structured document using AI
-- **AI chat refinement panel** — have a conversation with the AI to iteratively refine generated sections
-- **Chat apply validation** — AI-suggested edits are validated before being applied to prevent corruption
-- **4-hour online re-check** — trial and license status are re-verified periodically while the app is running
+### Performance
+- **AI inference off the main thread** — UI stays fully responsive during generation and import
+- **Debounced saves** — disk writes batched while typing, with a visual "Saved" indicator
+- **Incremental preview updates** — markdown preview no longer flashes or resets scroll on every edit
+
+### Streaming Chat
+- **Real-time token streaming** — AI responses appear word-by-word in the chat panel
+- **Think-tag filtering** — seamless Qwen3 model compatibility
+- **Return to send** — press Return to send, Shift+Return for newline
+
+### UI/UX Polish
+- **Required field hints** — red asterisks on required fields, tooltip explains why Generate is disabled
+- **Delete confirmation** — documents can no longer be accidentally deleted from the context menu
+- **Word count** — word count, character count, and estimated read time in the editor
+- **Document count badge** — sidebar footer shows total and filtered document count
+- **Clickable outline** — click any heading in the outline panel to scroll the preview to that section
+- **Export readiness gate** — export is disabled until all readiness checks pass (title, client, draft, license)
 
 ---
 
@@ -26,20 +35,30 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 ### Local AI Generation
 - Runs 100% offline using Apple's MLX framework on Apple Silicon
 - Multiple model support — download and switch between models from Settings
+- AI processing runs on background threads — UI never blocks during generation
 
 ### Structured Document Authoring
 - Capture everything a TDD needs: client, SOW #, project name, title, solution type, script types, included records, included fields, integration points, testing criteria, risks & assumptions
 - NetSuite record autocomplete — 85+ standard records with categorized suggestions
 - Expanded field types — all standard NetSuite field types
 - Live status workflow: **Draft > Client Review > Client Approved > Cancelled**
+- Required field indicators with clear tooltips
 
 ### Multi-Document Workspace
 - Command Center dashboard with document metrics, recent work, and client browser
-- Sidebar with color-coded status badges
+- Sidebar with color-coded status badges and document count
 - Search across all document fields from the toolbar
 - Filter by Client, Status, or Script Type with per-status counts
 - Group by Client for a folder-style view
 - Duplicate and export documents from the right-click context menu
+- Delete confirmation prevents accidental data loss
+
+### AI Chat Refinement
+- Streaming token output — responses appear word-by-word as the AI generates them
+- Section-aware Apply — merge AI suggestions into specific document sections
+- Insert new sections with placement control
+- Single-level undo for applied changes
+- Return to send, Shift+Return for multiline input
 
 ### Smart Prompt Engineering
 - Customize TDD Sections — choose which sections appear, reorder them, write per-section AI instructions and sample text
@@ -52,11 +71,14 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ### Live Markdown Preview & Editor
 - Side-by-side mode — edit markdown on the left, see the rendered preview on the right
-- Inline markdown editor with dark-mode-aware syntax highlighting
+- Incremental preview updates — no flash or scroll reset during editing
+- Clickable outline panel — jump to any section in the preview
+- Word count, character count, and estimated reading time
 - Properly formatted tables, code blocks, and headings
 
 ### Import & Export
-- One-click export to `.docx`
+- One-click export to `.docx` with readiness checklist
+- Export gated on all readiness checks (title, client, draft, license)
 - Import from PDF or Word — AI extracts and restructures content into editable TDD fields
 - Import/export `.suitetdd` files to share between Macs or team members
 - Export filename template with `{title}`, `{client}`, `{project}`, `{sow}`, `{date}` placeholders
@@ -77,6 +99,8 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 - **Cmd+E** — Export to Word
 - **Cmd+Shift+I** — Import Document
 - **Cmd+Option+I** — Import from PDF/Word
+- **Return** — Send chat message
+- **Shift+Return** — Newline in chat
 
 ### Onboarding & Auto-Update
 - First-launch tutorial walks through profile setup, model download, and feature overview
