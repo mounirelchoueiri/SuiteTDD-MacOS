@@ -125,7 +125,7 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ## 🔗 Links
 
-[🌐 Explore SuiteTDD](https://suitetdd.com)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[🚀 Unlock Your License](https://buy.stripe.com/4gMdR98IUaRNgx6fbgbwk01)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[🔑 Lost Your Key?](https://suitetdd.com/license-lookup)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[🐞 Found a Bug? Tell Me](https://github.com/mounirelchoueiri/SuiteTDD-MacOS/issues/new)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[📢 What’s New?](../../releases)
+[🌐 Explore SuiteTDD](https://suitetdd.com)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[🚀 Unlock Your License](https://buy.stripe.com/4gMdR98IUaRNgx6fbgbwk01)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[🔑 Lost Your Key?](https://suitetdd.com/license-lookup)<br><br>[🐞 Found a Bug? Tell Me](https://github.com/mounirelchoueiri/SuiteTDD-MacOS/issues/new)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[📢 What’s New?](../../releases)
 
 ---
 
