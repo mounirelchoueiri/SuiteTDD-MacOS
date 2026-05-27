@@ -130,15 +130,15 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 | Command Center | Document Editor |
 | --- | --- |
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Editor](docs/screenshots/editor.png) |
+| ![Dashboard](docs/screenshots/commandcenter.png) | ![Editor](docs/screenshots/editor.png) |
 
 | Generated Preview | AI Chat Refinement |
 | --- | --- |
-| ![Preview](docs/screenshots/preview.png) | ![Chat](docs/screenshots/chat.png) |
+| ![Preview](docs/screenshots/preview.png) | ![Chat](docs/screenshots/studio.png) |
 
-| PDF/Word Import | License Activation |
+| PDF/Word Import | Control Center |
 | --- | --- |
-| ![Import](docs/screenshots/import.png) | ![License](docs/screenshots/license.png) |
+| ![Import](docs/screenshots/word.png) | ![Control Center](docs/screenshots/controlcenter.png) |
 
 ---
 
