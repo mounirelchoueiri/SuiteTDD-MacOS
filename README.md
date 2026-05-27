@@ -2,9 +2,9 @@
 
 **AI-Powered NetSuite Technical Design Documents — generated locally on your Mac.**
 
-SuiteTDD is a native macOS app that helps NetSuite consultants and developers produce professional Technical Design Documents (TDDs) in seconds. It runs entirely offline using Apple Silicon's MLX framework — your client data never leaves your Mac.
+SuiteTDD is a native macOS app that helps NetSuite consultants and developers produce professional Technical Design Documents (TDDs) in minutes. It runs entirely offline using Apple Silicon's MLX framework — your client data never leaves your Mac.
 
-> Made by Mounir, in Toronto
+> Made ❤️ by Mounir, in Toronto 🇨🇦
 
 ---
 
@@ -86,10 +86,7 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ### Licensing & Free Trial
 - 7-day free trial — enter your email to start, no credit card required
-- Trial enforced server-side: one per email and one per machine
-- Purchase a lifetime license via Stripe — key delivered by email instantly
-- Activate by entering a key, or double-click a `.suitetddlicense` file
-- Activate on up to 2 machines per license
+- Purchase a lifetime license via Stripe — key delivered instantly & by email
 - Retrieve your license anytime at [suitetdd.com/license-lookup](https://suitetdd.com/license-lookup)
 
 ### Keyboard Shortcuts
@@ -126,24 +123,9 @@ SuiteTDD is a native macOS app that helps NetSuite consultants and developers pr
 
 ---
 
-## Screenshots
-
-| Command Center | Document Editor |
-| --- | --- |
-| ![Dashboard](docs/screenshots/commandcenter.png) | ![Editor](docs/screenshots/editor.png) |
-
-| Generated Preview | AI Chat Refinement |
-| --- | --- |
-| ![Preview](docs/screenshots/preview.png) | ![Chat](docs/screenshots/studio.png) |
-
-| PDF/Word Import | Control Center |
-| --- | --- |
-| ![Import](docs/screenshots/word.png) | ![Control Center](docs/screenshots/controlcenter.png) |
-
----
-
 ## Links
 
+- [Website](https://suitetdd.com)
 - [Purchase a License](https://buy.stripe.com/4gMdR98IUaRNgx6fbgbwk01)
 - [Retrieve Your License Key](https://suitetdd.com/license-lookup)
 - [Report an Issue](https://github.com/mounirelchoueiri/SuiteTDD-MacOS/issues/new)
